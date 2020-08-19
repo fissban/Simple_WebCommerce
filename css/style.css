@@ -1,0 +1,33 @@
+.table td,
+.table t {
+    padding: .0rem;
+    vertical-align: middle;
+}
+
+.one-page {
+    height: 81.0vh;
+    overflow: none;
+}
+
+
+.scroll-izquierdo {
+    overflow-y: scroll;
+    height: 88.0vh;
+}
+
+.scroll-derecho {
+    overflow-y: scroll;
+    height: 81.0vh;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.table {
+    font-size: small;
+}
+
+.btn-custom {
+    width: 100%;
+}

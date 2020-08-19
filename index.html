@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--IMPORT GOOGLE ICON FONT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="row">
+            <div class="col-12 text-center bg-primary text-light">
+                <h1>Supermercado La Anonima</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row one-page">
+            <div class="col-6 scroll-izquierdo">
+                <!-- <button class="btn btn-primary" onclick="total()">TOTAL</button> -->
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h3>Productos Disponibles</h3>
+                    </div>
+                </div>
+                <div class="row scroll-izquierdo">
+                    <table class="table">
+                        <thead class="thead-dark text-center">
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio unitario</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Funcion</th>
+                            <th scope="col"></th>
+                        </thead>
+                        <tbody id="table_stock">
+                            <!-- CODE IN JAVASCRIPT -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-6 scroll-derecho">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h3>Su Compra</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table" id="table_return">
+                        <thead class="thead-dark text-center">
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Precio unitario</th>
+                            <th scope="col">Cantidad</th>
+                            <th scope="col">Sub-total</th>
+                            <th scope="col"></th>
+                        </thead>
+                        <tbody id="table_buy">
+                            <!-- CODE IN JAVASCRIPT -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <!-- empty -->
+            </div>
+            <div class="col-6 text-light text-center">
+                <button class="btn btn-success btn-custom" onclick="totalCompra()">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+    <script src=" ./js/script.js"></script>
+</body>
+
+</html>
